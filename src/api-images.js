@@ -7,10 +7,10 @@ export const getImages = async (topic, currentPage) => {
         params: {
             query: topic,
             page: currentPage,
-            per_page: 16,
+            per_page: 12,
             client_id: 'lt64ARMbz2bcDSoPLXh2_w0CMT5CGRXpDBDlF9XhWW0',
             orientation: 'landscape',
         }
     })
-    return response.data.hits;
+    return response.data.results;
     }

@@ -1,0 +1,25 @@
+.header{
+    padding: 20px;
+    background-color: #1d20c2;
+    width: 1440px;
+}
+.form{
+    display: flex;
+    align-items: center;
+    max-width: 350px;
+    margin: auto;
+}
+.field {
+    padding: 8px 8px;
+    margin-right: 16px;
+    height: 40px;
+   }
+.button {
+    padding: 8px 12px;
+    max-width: 120px;
+    color: white;
+    background-color: #f1205f;
+    border: none;
+    font-size: 20px;
+    border-radius: 4px;
+}

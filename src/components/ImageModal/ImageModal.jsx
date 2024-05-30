@@ -1,4 +1,4 @@
-import css from './ImageModal.module.css';
+
 import Modal from 'react-modal';
 
 
@@ -16,8 +16,6 @@ const customStyles = {
     border: "none",
     background: "none",
     overflow: "visible",
-    height: "500px",
-    width: "auto",
   },
 };
 Modal.setAppElement('#root');

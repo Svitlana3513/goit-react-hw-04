@@ -5,8 +5,9 @@ import { Formik, Form, Field } from 'formik';
 const notify = () => toast('Please enter a text!!!');
 
 export default function SearchBar({ onSearch }) {
+    return(
     <>
-        <header>
+        <header className={css.header}>
             <Formik
                 initialValues={{ query: "" }}
                 onSubmit={(values, actions) =>{
@@ -20,7 +21,8 @@ export default function SearchBar({ onSearch }) {
                 <Form className={css.form}>
                     <Field className={css.field}type="text"
                         name="query"
-                        autocomplete="off"
+                        autoComplete="off"
+                        autofocus
                         placeholder="Search images and photos"/>
                     <button type="submit" className={css.button}>Search</button>
                     <Toaster/>
@@ -28,6 +30,6 @@ export default function SearchBar({ onSearch }) {
              </Formik>
         </header>  
     </>
-    
+    )
 }
 
